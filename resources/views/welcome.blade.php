@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-
+        <script src="{{asset('js/app.js')}}"></script>
         <!-- Styles -->
         <style>
             html, body {
@@ -62,6 +62,11 @@
                 margin-bottom: 30px;
             }
         </style>
+        <script>
+            Echo.channel('comment')
+            .listen('NewComment',(e) => {
+            console.log(e);
+        </script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
