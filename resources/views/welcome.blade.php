@@ -66,6 +66,7 @@
             Echo.channel('comment')
             .listen('NewComment',(e) => {
             console.log(e);
+            });
         </script>
     </head>
     <body>
